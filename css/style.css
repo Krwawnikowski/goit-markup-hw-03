@@ -91,6 +91,8 @@ img {
 .navigation-list-link:focus,
 .address-header-tel:hover,
 .address-header-tel:focus,
+.address-header-mail:focus,
+.address-header-mail:hover,
 .address-header:hover,
 .address-header:focus {
     color:var(--main-color)
@@ -284,7 +286,7 @@ img {
 
 .portfolio-hero-list-btn {
     font-weight: 500;
-    background: #F5F4FA;
+    background: var(--fourth-color);
     border-radius: 4px;
     cursor: pointer;
     align-items: center;
