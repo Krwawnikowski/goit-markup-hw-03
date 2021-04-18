@@ -8,7 +8,7 @@
     --seveth-color: #2F303A;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
-    @import '/css/modern-normalize.css';
+
 }
 h1, h2, h3, h4, h5, h6, ul, ol, p, span {
     margin: 0;
@@ -32,6 +32,10 @@ img {
     width: 1200px;
     align-items: center;
     margin: 0 auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* ======COMPONENTS====== */
@@ -62,7 +66,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--sixth-color);
     margin-right: 93px;
-    margin-left: 215px;
+    margin-left: 15px;
     }
 .navigation-list-link, 
 .address-header, .address-header, .address-header-tel {
@@ -102,7 +106,7 @@ img {
 }
 .header .address-header-tel {
     margin-left: 50px;
-    margin-right: 227px;
+    margin-right: 27px;
 }
 
 /* ======END HEADER====== */
@@ -110,35 +114,37 @@ img {
 /* ======MAIN====== */
 
     /* ======SECTION HERO====== */
+.hero{
+    background-color: var(--seveth-color);
+    height: 600px;
+    text-align: center;
+    padding-top: 200px;
+}
 .hero-h1 {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.364;
+    line-height: 1.4;
+    color: var(--fifth-color);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color:var(--fifth-color);
-    padding: 200px 452px 280px 452px;
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: 252px;
 
 }
 .hero-btn {
-    background: #2196F3;
+    background-color: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-size: 16px;
-    font-weight: 700;
     border-radius: 4px;
+    border-color: #2196F3;
     cursor: pointer;
+    font-size: 16px;
+    line-height: 1.9;
     color: var(--fifth-color);
-    padding: 10px 41px;
+    text-align: center;
     letter-spacing: 0.06em;
-    margin-top: 30px;
 }
-.hero {
-    background-color: var(--seveth-color)
-}
-.hero .container {
-    display: flex;
 
-}
     /* ======END SECTION HERO====== */
     /* ======SECTION ADVENTEGES====== */
 .adventeges-list-item-title {
@@ -147,20 +153,32 @@ img {
     line-height: 1.143;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin: 10px 0;  
 }
 .adventeges-list-item-text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.714;
     letter-spacing: 0.03em;
-    color: var(--secondary-color)
+    color: var(--secondary-color); 
+    display: block;
+    width: 270px;  
 }
 .section-title {
     font-size: 36px;
-    line-height: 1.167;
     letter-spacing: 0.03em;
+    background-color: var(--third-color);        
 }
-.section-title {
-    background-color: var(--third-color);
+.adventeges-list {
+    display: flex; 
+    justify-content: space-between;
+}
+.section-title .h2 {
+    margin-left: 424px;
+    margin-right: auto;
+}
+.activities-list {
+    display: flex;
+    justify-content: space-between;
 }
     /* ======END SECTION ADVENTEGES====== */
     /* ======SECTION ABOUT-US====== */
