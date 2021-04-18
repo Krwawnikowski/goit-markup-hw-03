@@ -1,4 +1,4 @@
-:root {
+ :root {
     --main-color: #2196F3;
     --secondary-color: #757575;
     --third-color: #E5E5E5;
@@ -8,13 +8,31 @@
     --seveth-color: #2F303A;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
+    @import '/css/modern-normalize.css';
+}
+h1, h2, h3, h4, h5, h6, ul, ol, p, span {
+    margin: 0;
+    padding: 0;
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+img {
+    display: block;
 }
 
 .body {
     font-family: var(--main-font);
     color:var(--sixth-color)
 }
-
+.container{
+    width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+}
 
 /* ======COMPONENTS====== */
 .logo-span {
@@ -42,10 +60,12 @@
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
-    color: var(--sixth-color)
+    color: var(--sixth-color);
+    margin-right: 93px;
+    margin-left: 215px;
     }
 .navigation-list-link, 
-.address-header {
+.address-header, .address-header, .address-header-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
@@ -54,10 +74,37 @@
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus,
+.address-header-tel:hover,
+.address-header-tel:focus,
 .address-header:hover,
 .address-header:focus {
     color:var(--main-color)
 }
+
+.header .container{
+    display: flex;
+    align-items: center;
+    padding: 32px
+}
+
+.navigation {
+    display: flex;
+}
+.navigation-list {
+    display: flex;
+    align-items: center;
+}
+.navigation-list-item:not(:last-child) {
+    margin-right: 46px;
+}
+.header .address-header {
+    margin-left: auto;  
+}
+.header .address-header-tel {
+    margin-left: 50px;
+    margin-right: 227px;
+}
+
 /* ======END HEADER====== */
 
 /* ======MAIN====== */
@@ -69,15 +116,28 @@
     line-height: 1.364;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color:var(--fifth-color)
+    color:var(--fifth-color);
+    padding: 200px 452px 280px 452px;
+
 }
 .hero-btn {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 700;
     border-radius: 4px;
+    cursor: pointer;
+    color: var(--fifth-color);
+    padding: 10px 41px;
+    letter-spacing: 0.06em;
+    margin-top: 30px;
 }
 .hero {
     background-color: var(--seveth-color)
+}
+.hero .container {
+    display: flex;
+
 }
     /* ======END SECTION HERO====== */
     /* ======SECTION ADVENTEGES====== */
