@@ -37,7 +37,10 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+.section-btn-portfolio {
+    padding-top: 94px;
+    padding-bottom: 50px;    
+}
 /* ======COMPONENTS====== */
 .logo-span {
     color: #2196F3;
